@@ -32,9 +32,9 @@ app.get('/location',(req,res)=> {
         if (err) throw err;
         res.send(result)   
     }
-   )*/
+   )
    
-})
+})*/
 app.get('/restaurants',(req,res)=> {
     let restId =Number(req.query.state_id )
     let mealId = Number(req.query.meal_id)
