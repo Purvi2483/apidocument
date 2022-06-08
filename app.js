@@ -26,7 +26,7 @@ app.get('/location',(req,res)=> {
 
 
 //rest wrt quicksearch
-app.get('/restaurants/:id',(req,res)=> {
+app.get('/restaurants',(req,res)=> {
     let restId =Number(req.params.id );
  db.collection('restaurants').find({mealTypes.mealtype_id:restId}).toArray((err,result)=>{
         if (err) throw err;
